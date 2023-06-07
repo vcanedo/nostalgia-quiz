@@ -7,7 +7,7 @@ import Welcome from "./components/Welcome"
 
 // ===========================================
 // STYLES
-// import './App.css'
+import './App.css'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 
