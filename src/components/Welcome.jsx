@@ -7,15 +7,15 @@ import './Welcome.css';
 
 const Welcome = () => {
 
-  const quizState = useContext(QuizContext)
-
-  console.log(quizState);
+  const [quizState, dispatch] = useContext(QuizContext)
 
   return (
     <div id="welcome">
       <h2>Welcome!</h2>
       <p>Click on the button to begin</p>
-      <button>Begin</button>
+      <button onClick={() => dispatch({type: "CHANGE_STATE"})}>
+        Begin
+      </button>
       <img src={SpaceInvaders} alt="Quiz Start" />
     </div>
   )
